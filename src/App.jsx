@@ -1,53 +1,40 @@
 import "./App.css";
-import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const formatNumber = (num) => (num < 10 ? `0${num}` : num);
-
   return (
     <div className="box">
       <div className="box__content">
         <p className="main">
-          <span className="comp"> letttttttt</span> clock
+          <span className="comp"> let</span> clock
           <span className="comp"> =</span>
           <span className="bracket"> &#123;</span>
         </p>
         <p>
           hour:
-          <span className="num"> {formatNumber(currentTime.getHours())}</span>,
+          <span className="num"> 2</span>,
         </p>
         <p>
           minute:
-          <span className="num"> {formatNumber(currentTime.getMinutes())}</span>,
+          <span className="num"> 14</span>,
         </p>
         <p>
           second:
-          <span className="num"> {formatNumber(currentTime.getSeconds())}</span>,
+          <span className="num"> 21</span>,
         </p>
         <p>
-          period: <span className="str"> "{currentTime.getHours() >= 12 ? 'PM' : 'AM'}"</span>,
+          period: <span className="str"> "AM"</span>,
         </p>
         <p>
           day:
-          <span className="num"> {formatNumber(currentTime.getDate())}</span>,
+          <span className="num"> 9</span>,
         </p>
         <p>
           month:
-          <span className="str"> "{currentTime.toLocaleString('en-us', { month: 'long' })}"</span>,
+          <span className="str"> "May"</span>,
         </p>
         <p>
           year:
-          <span className="num"> {currentTime.getFullYear()}</span>
+          <span className="num"> 2024</span>
         </p>
         <p className="main">
           <span className="bracket"> &#125;</span>;
