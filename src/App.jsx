@@ -18,7 +18,7 @@ function App() {
     <div className="box">
       <div className="box__content">
         <p className="main">
-          <span className="comp"> let</span> clock
+          <span className="comp"> letttttttt</span> clock
           <span className="comp"> =</span>
           <span className="bracket"> &#123;</span>
         </p>
