@@ -17,14 +17,14 @@ p{
   text-indent: 0;
 }
 .comp{
-  color: #69d0fe;
+  color: #3f6f85;
 }
 .num{
-  color: red;
+  color: #e8b9bf;
 }
 .str{
-  color: yellow;
+  color: #efc189;
 }
 .bracket{
-  color: purple;
+  color: #792046;
 }
